@@ -1,0 +1,20 @@
+{
+  "name": "Hatsune Miku",
+  "age": 16,
+  "friends": [
+    {
+      "name": "Kagamine Rin",
+      "age": 14,
+      "nicknames": ["Rin-chan", "Kyary Rin Rin"]
+    },
+    {
+      "name": "Yuzuki Yukari",
+      "age": 18,
+      "nicknames": null
+    },
+    {
+      "name": "Kotonoha Akane",
+      "age"
+    }
+  ]
+}

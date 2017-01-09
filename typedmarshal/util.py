@@ -15,7 +15,7 @@ def pretty_print_recursive(obj, indent=0):
     else:
         for k, v in obj.__dict__.items():
             if not k.startswith('_'):
-                if v.__class__.__name__ not in __builtins__.__dict__:
+                if v.__class__.__name__ not in __builtins__:
                     i_print(f'{k}:')
                     pretty_print_recursive(v, indent=indent+2)
                 elif isinstance(v, (list, dict)):

@@ -2,15 +2,14 @@ from typedmarshal import MarshalModel, pretty_print_recursive
 from typing import List, Optional
 
 
-class Friend:
-    name: str = None
-    age: int = None
-    nicknames: Optional[List[str]] = None
-
-
 class NestedJson(MarshalModel):
-    name: str = None
-    age: int = None
+    class Friend:
+        name: str = ""
+        age: Optional[int] = None
+        nicknames: Optional[List[str]] = None
+
+    name: str = ""
+    age: int = 0
     friends: List[Friend] = []
 
 

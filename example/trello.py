@@ -1,4 +1,4 @@
-from typedmarshal import MarshalModel
+from typedmarshal import MarshalModel, pretty_print_recursive
 from typing import List, Dict, Optional, Any, Union
 
 
@@ -149,4 +149,4 @@ class Trello(MarshalModel):
 
 trello = Trello()
 trello.load_json(open('trello.json'))
-print()
+pretty_print_recursive(trello)
